@@ -1,0 +1,45 @@
+<!doctype html>
+<title>Layout</title>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "contents contents contents"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header, footer, contents {
+  padding: 1.2em;
+  background: greenyellow;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#maincontents { 
+  grid-area: contents; 
+  }
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "contents"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
+</style>
+<body>
+  <header id="pageHeader">Header</header>
+  <contents id="maincontents">Contants</contents>
+  <footer id="pageFooter">Footer</footer>
+</body>
