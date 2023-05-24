@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: auto;
+    height: 929px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    transition: background-color .2s;
+    padding: 20px;
+}
+
+.switch {
+    display: flex;
+    float: right;
+    border-radius: 50px;
+    width: 3rem;
+    padding: .3rem;
+    background-color: rgb(59, 151, 255);
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+.btn-toggle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform .1s;
+}
+
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #333;
+}
+
+.dark-theme .switch {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.dark-theme .btn-toggle {
+    transform: translateX(28px);
+}
+
+.dark-theme .chat-box {background: #ffffff; padding: 5px;
+    border-radius: 8px;
+  max-width: 1800px;
+  position: relative;
+  float: left;
+  color: black;
+    
+}
+.dark-theme .chat-content{
+    height: 810px; overflow-y: scroll;
+}
+
+.dark-theme #tittle {
+  font-size: 30px;
+    color: #ffffff;
+}
+
+.chat-content { height: 810px; overflow-y: scroll;
+}
+
+.chat-content::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+
+.line { margin-top: 10px; display: flex }
+
+.chat-box { background: #333; padding: 5px;
+    border-radius: 8px;
+  max-width: 1800px;
+  position: relative;
+  float: left;
+  color: white;
+}
+
+.mine { margin-left: auto }
+
+#container {
+    width: 100%;
+    height: 100%;
+  }
+
+  #header {
+    margin-bottom: 20px;
+  }
+
+  #contents {
+    position: relative;
+    width: 100%;
+    float: left;
+    vertical-align: bottom;
+    margin-bottom: 20px;
+  }
+
+  #sidebar {
+    width: 220px;
+    padding: 20px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  #footer {
+    clear: both;
+    padding: 20px;
+  }
+
+  input {
+    width : 100%;
+  }
+
+  #tittle{
+    font-size: 30px;
+    color: #333;
+  }
+
+  button{
+    position: absolute;
+    float:left;
+    margin-left: 15px ;
+    align-items: center;
+  }
+
+  p{
+    
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  img{
+    position: absolute;
+    left: 46%;
+    top: 43%;
+  }
